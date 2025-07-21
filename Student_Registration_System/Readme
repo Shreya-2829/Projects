@@ -1,0 +1,23 @@
+🎓 Student Registration System 
+
+A desktop-based student registration system built using **Python**, **Tkinter** for GUI, and **MySQL** as the database. This simple application allows users to add, update, delete, and view student records through a user-friendly interface.
+---
+## ✅ Features
+
+- Add new student records (Name, Course, Fee)
+- Update existing records
+- Delete student records
+- View all records in a table (Treeview)
+- Auto-fills data when a row is selected
+- Input validations and error handling
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python 3.x**
+- **Tkinter** – GUI library for building desktop apps
+- **MySQL** – Relational database
+- **mysql-connector-python** – To connect Python with MySQL
+
+---
