@@ -1,0 +1,96 @@
+
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| college            |
+| information_schema |
+| mysql              |
+| new                |
+| performance_schema |
+| shreyadb           |
+| sys                |
++--------------------+
+7 rows in set (0.08 sec)
+
+mysql> create database webgui;
+Query OK, 1 row affected (0.12 sec)
+
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| college            |
+| information_schema |
+| mysql              |
+| new                |
+| performance_schema |
+| shreyadb           |
+| sys                |
+| webgui             |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql> use webgui;
+Database changed
+mysql> create table registration(
+    -> id int auto_increment primary key,
+    -> name varchar(100) not null,
+    -> course varchar(100
+    -> ) not null,
+    -> fee decimal(10,2) not null);
+Query OK, 0 rows affected (0.16 sec)
+
+mysql> desc registration
+    -> ;
++--------+---------------+------+-----+---------+----------------+
+| Field  | Type          | Null | Key | Default | Extra          |
++--------+---------------+------+-----+---------+----------------+
+| id     | int           | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(100)  | NO   |     | NULL    |                |
+| course | varchar(100)  | NO   |     | NULL    |                |
+| fee    | decimal(10,2) | NO   |     | NULL    |                |
++--------+---------------+------+-----+---------+----------------+
+4 rows in set (0.05 sec)
+
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| college            |
+| information_schema |
+| mysql              |
+| new                |
+| performance_schema |
+| shreyadb           |
+| sys                |
+| webgui             |
++--------------------+
+8 rows in set (0.02 sec)
+
+mysql> use webgui;
+Database changed
+mysql> show tables;
++------------------+
+| Tables_in_webgui |
++------------------+
+| registration     |
++------------------+
+1 row in set (0.04 sec)
+
+mysql> select * from registration;
+Empty set (0.01 sec)
+
+mysql> select * from registration;
++----+---------+--------------+-----------+
+| id | name    | course       | fee       |
++----+---------+--------------+-----------+
+|  1 | shreya  | cse          |  43000.00 |
+|  2 | shwetha | data science | 360000.00 |
++----+---------+--------------+-----------+
+2 rows in set (0.00 sec)
+
+mysql>                                                      
